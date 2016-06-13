@@ -152,54 +152,17 @@ a:hover{
 	color:#EAC100;
 }
 .header{
-  height:530px;
+  height:560px;
   background-color:#B8D3D3;
 }
 .logo{
-	height:150px;
-	background-color:#B8D3D3;
-	padding-top: 20px;
-	padding-left: 20px;
+	height:150px;  
+	background-color:white;
+	padding-top: 0px;
 }
-
-.function ul  {
+.logo a img{
 	margin-right: auto;
   	margin-left: auto;
-  	width:700px;
-  	height:100px;
-}
-.function ul li{
-	display:block;
-	float: left;
-  	width:200px;
-  	height:50px;
-  	margin-left:100px;
-	margin-top:35px;
-  	text-align:center;
-}
-.function1{
-	width:205px;
-  	height:57px;
-	background-image: url('function_icon_1.png');
-	border:0px solid #5CADAD;
-}
-.function1:hover{
-	width:205px;
-  	height:57px;
-	background-image: url('function_icon_action_1.png');
-	border:0px solid #5CADAD;
-}
-.function2{
-	width:205px;
-  	height:57px;
-	background-image: url('function_icon_2.png');
-	border:0px solid #5CADAD;
-}
-.function2:hover{
-	width:205px;
-  	height:57px;
-	background-image: url('function_icon_action_2.png');
-	border:0px solid #5CADAD;
 }
 .content{
   height:auto;
