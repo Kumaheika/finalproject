@@ -205,7 +205,7 @@ a:hover{
   	margin-right: auto;
   	margin-left: auto;
 }
-.mapshow{
+#map_canvas{
 	width:700px;
 	height:800px;
   	background-color:white;

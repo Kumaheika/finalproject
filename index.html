@@ -2,12 +2,15 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Document</title>
+  <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+	<title>交通安全地圖</title>
   <script type="text/javascript" src="js/jquery-2.2.3.min.js"></script>
   <script type="text/javascript" src="js/all.js"></script>
+  <script type="text/javascript" src="js/map.js"></script>
+  <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?&sensor=SET_TO_TRUE_OR_FALSE"></script>
   	<link rel="stylesheet" href="css/final.css" />
 </head>
-<body>
+<body onload="initialize()">
 	<div class="wrap">
   		<div class="header">	
           <div id="abgne_fade_pic"> <!--這裡放輪播-->
@@ -26,7 +29,7 @@
   		
 　		<div class="content">
    			<div class="map">
-				<div class="mapshow">
+				<div id="map_canvas">
 					<!--這裡顯示地圖-->
 				</div>
 				<div class="mapitem">
