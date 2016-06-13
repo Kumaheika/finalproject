@@ -152,8 +152,14 @@ a:hover{
 	color:#EAC100;
 }
 .header{
-  height:380px;
+  height:530px;
   background-color:#B8D3D3;
+}
+.logo{
+	height:150px;
+	background-color:#B8D3D3;
+	padding-top: 20px;
+	padding-left: 20px;
 }
 
 .function ul  {
