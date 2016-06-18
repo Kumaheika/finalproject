@@ -173,12 +173,10 @@ a:hover{
   	height:800px;
   	margin-right: auto;
   	margin-left: auto;
+  	background-color:  black;
 }
-#map_canvas{
-	width:700px;
-	height:800px;
-  	background-color:white;
-  	float: left;
+#div_showMap{
+	background-color: white;
 }
 .mapitem{
 	width:280px;
