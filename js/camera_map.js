@@ -1,16 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="UTF-8">
-  <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
-	<title>交通安全地圖</title>
-  <script type="text/javascript" src="js/jquery-2.2.3.min.js"></script>
-  <script type="text/javascript" src="js/abgne_fade.js"></script>
-  <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCUQcS7Hlmjw4K8xoiv06WZTyfMi8Ipzig&callback=initMap"></script>
-  <script type="text/javascript" src="js/camera_map.js"></script>
-  	<link rel="stylesheet" href="css/final.css" />
- <!--<script type="text/javascript">
-        $(document).ready(init);
+$(document).ready(init);
 
         //網頁上所有的DOM都載入後
         function init() {
@@ -66,37 +54,3 @@
                 }     //End success: function (data) 
             });       //End jQuery Ajax
         }             //End function addMarker() 
-
-    </script>-->
-</head>
-<body onload="initialize()">
-	<div class="wrap">
-  		<div class="header">	
-        <div class="logo">
-          <a href="#"><img src="css/logo.png"/></a>
-        </div>
-          <div id="abgne_fade_pic"> <!--這裡放輪播-->
-            <a href="#" class="ad"><img src="images/abgne_fade_pic1.png"/></a> 
-            <a href="#" class="ad"><img src="images/abgne_fade_pic2.png"/></a> 
-            <a href="#" class="ad"><img src="images/abgne_fade_pic3.png"/></a> 
-            <a href="#" class="ad"><img src="images/abgne_fade_pic4.png"/></a>
-          </div> 
-    	</div>
-　		<div class="content">
-   			<div class="map">
-				<form id="form1" runat="server">
-          <div id="div_showMap">
-          </div>
-        </form>
-				<div class="mapitem">
-					<!--這裡有三個功能-->
-				</div>
-   			</div>
-  		</div>
-　		<div class="footer">
-			<p><a href="http://data.kaohsiung.gov.tw/Opendata/">Open Data.kaohsiung</a></p>
-   			<p>Copyright © 2016 NUKIM Y.D.Z</p>
-  		</div>
-  	</div>
-</body>
-</html>
