@@ -3,73 +3,14 @@
 <head>
 	<meta charset="UTF-8">
   <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
-	<title>交通安全地圖</title>
+	<title>打狗交通安全網</title>
   <script type="text/javascript" src="js/jquery-2.2.3.min.js"></script>
   <script type="text/javascript" src="js/abgne_fade.js"></script>
   <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCUQcS7Hlmjw4K8xoiv06WZTyfMi8Ipzig&callback=initMap"></script>
   <script type="text/javascript" src="js/camera_map.js"></script>
   <link rel="stylesheet" href="css/final.css" />
- <!--<script type="text/javascript">
-        $(document).ready(init);
-
-        //網頁上所有的DOM都載入後
-        function init() {
-            addMarker();
-        }
-        //加入標記點
-        function addMarker() {
-            $.ajax(
-            {
-                url: 'http://data.kaohsiung.gov.tw/Opendata/DownLoad.aspx?Type=2&CaseNo1=AF&CaseNo2=1&FileType=2&Lang=C&FolderType=O',
-                type: 'GET',
-                async: false,
-                data: {},
-                dataType: 'json',
-                success: function (data) {
-
-
-                    var first = true;
-                    var map;
-                    for (var index in data) {
-
-                        if (first == true) {//第一次執行迴圈
-                            /*以哪個緯經度中心來產生地圖*/
-                            var latlng = new google.maps.LatLng(data[index].緯度Lat, data[index].經度Lng);
-                            //var location = data[index].測 照 地 點;
-                            var title = data[index].功能;
-                            var myOptions = {
-                                zoom: 14,
-                                center: latlng,
-                                mapTypeId: google.maps.MapTypeId.ROADMAP
-                            };
-                            /*產生地圖*/
-                            map = new google.maps.Map($("#div_showMap")[0], myOptions);
-
-                            first = false;
-                        } //End if (first == true) 
-
-
-                        //建立緯經度座標
-                        var myLatlng = new google.maps.LatLng(data[index].緯度Lat, data[index].經度Lng);
-                        //加一個Marker到map中
-                        var image = 'camera.png';
-                        var marker = new google.maps.Marker({
-                            position: myLatlng,
-                            map: map,
-                            icon: image,
-                            title: data[index].名稱
-                        });
-                          var infoWindow = new google.maps.InfoWindow({
-                  content: '功能:' + title + '<br>' /*+ '測 照 地 點:' + location*/
-              });
-                    } //End for (var index in data) 
-                }     //End success: function (data) 
-            });       //End jQuery Ajax
-        }             //End function addMarker() 
-
-    </script>-->
 </head>
-<body onload="initialize()">
+<body>
 	<div class="wrap">
   		<div class="header">	
         <div class="logo">
@@ -95,8 +36,32 @@
    			</div>
   		</div>
 　		<div class="footer">
-			<p><a href="http://data.kaohsiung.gov.tw/Opendata/">Open Data.kaohsiung</a></p>
-   			<p>Copyright © 2016 NUKIM Y.D.Z</p>
+        <p>Copyright ©</p>
+        <p>2016 NUKIM Y.D.Z</p>
+        <p><a href="http://data.kaohsiung.gov.tw/Opendata/List.aspx?Type=O&cidOrOrganid=397130000C&PanelId=0&Lang=C">Open Data.kaohsiung</a></p>
+        <p>ICON original source</p>
+        <p>
+          <ul>
+            <li><a href="http://www.flaticon.com/free-icon/camera_112545#term=camera&page=1&position=17">ICON1</a></li>
+            <li><a href="http://www.flaticon.com/free-icon/camera_112545#term=camera&page=1&position=17">ICON2</a></li>
+            <li><a href="http://www.flaticon.com/free-icon/camera_112545#term=camera&page=1&position=17">ICON3</a></li>
+            <li><a href="http://www.flaticon.com/free-icon/camera_112545#term=camera&page=1&position=17">ICON4</a></li>
+            <li><a href="http://www.flaticon.com/free-icon/camera_112545#term=camera&page=1&position=17">ICON5</a></li>
+            <li><a href="http://www.flaticon.com/free-icon/camera_112545#term=camera&page=1&position=17">ICON6</a></li>
+          </ul>
+        </p>
+        <br>
+        <p class="piclink">PICTURE original source</p>
+        <p>
+          <ul>
+            <li><a href="http://www.flaticon.com/free-icon/camera_112545#term=camera&page=1&position=17">PIC1</a></li>
+            <li><a href="http://www.flaticon.com/free-icon/camera_112545#term=camera&page=1&position=17">PIC2</a></li>
+            <li><a href="http://www.flaticon.com/free-icon/camera_112545#term=camera&page=1&position=17">PIC3</a></li>
+            <li><a href="http://www.flaticon.com/free-icon/camera_112545#term=camera&page=1&position=17">PIC4</a></li>
+            <li><a href="http://www.flaticon.com/free-icon/camera_112545#term=camera&page=1&position=17">PIC5</a></li>
+            <li><a href="http://www.flaticon.com/free-icon/camera_112545#term=camera&page=1&position=17">PIC6</a></li>
+          </ul>
+        </p>
   		</div>
   	</div>
 </body>

@@ -65,9 +65,10 @@ a{
 	text-decoration: none; 
 	color:#EAC100;
 }
-a:hover{
+a,li:hover{
 	color:#EAC100;
 }
+
 .header{
   height:565px;
   background-color:white;
@@ -149,20 +150,37 @@ a img {
 }
 
 .footer{
-  height:100px;
+  height:250px;
   background-color:	#3E6184;
-  padding-top: 50px; 
+  padding-top: 40px; 
 }
 .footer p{
-	text-align:center;
+	text-align:left;
 	font-size: 18px;
 	color:	#BEBEBE;
+	line-height:22px;
+	margin-left: 100px;
 }
 .footer a{
 	color:	#949449;
+	font-size: 16px;
 }
 .footer a:hover{
 	color:#EAC100;
+}
+.footer li{
+	font-family:'PT Sans',sans-serif;
+	font-size: 16px;
+	line-height:24px;
+	display: block;
+	float:left;
+	margin-right: 10px; 
+}
+.footer ul{
+	margin-left: 100px;
+}
+.piclink{
+	clear: both;
 }
 @media only screen and (max-width: 768px) {
 .wrap{
@@ -204,7 +222,12 @@ a img {
 	height:500px;
   	margin-right: 3%;
 }
-
+.footer p{
+	margin-left:10%;
+}
+.footer ul{
+	margin-left:10%;
+}
 }
 @media only screen and (max-width: 480px) {
 .wrap{
@@ -232,7 +255,9 @@ a img {
 	width: 100%; 
 	height: 500px;
 }
-
+.footer p{
+	font-size: 14px;
+}
 @media only screen and (max-width: 320px) {
 .wrap{
   width:100%;
