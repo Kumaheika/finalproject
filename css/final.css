@@ -135,7 +135,7 @@ table {
 .wrap{
   width:1280px;
   height:auto;
-  background-color:#5CADAD;
+  background-color:#2894FF;
   margin-right: auto;
   margin-left: auto;
 }
@@ -166,7 +166,7 @@ a:hover{
 }
 .content{
   height:auto;
-  background-color:	#5CADAD;
+  background-color:	#2894FF;
 }
 .map{
 	width:1000px;
@@ -188,7 +188,7 @@ a:hover{
 }
 .footer{
   height:100px;
-  background-color:#336666;
+  background-color:	#003D79;
   padding-top: 50px; 
 }
 .footer p{
