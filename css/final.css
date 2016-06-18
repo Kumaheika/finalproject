@@ -152,7 +152,7 @@ a:hover{
 	color:#EAC100;
 }
 .header{
-  height:560px;
+  height:525px;
   background-color:#B8D3D3;
 }
 .logo{
@@ -176,8 +176,9 @@ a:hover{
   	background-color:  black;
 }
 #div_showMap{
-	width: 600px; 
-	height: 600px;
+	width: 700px; 
+	height: 800px;
+	float:left;
 }
 .mapitem{
 	width:280px;
