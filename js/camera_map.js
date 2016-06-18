@@ -3,7 +3,7 @@ $(document).ready(init);
         //網頁上所有的DOM都載入後
         function init() {
             addMarker();
-        
+        }
         //加入標記點
         function addMarker() {
             $.ajax(
@@ -40,7 +40,7 @@ $(document).ready(init);
                         //建立緯經度座標
                         var myLatlng = new google.maps.LatLng(data[index].緯度Lat, data[index].經度Lng);
                         //加一個Marker到map中
-                        var image = 'images/camera.png';//圖
+                        var image = 'camera.png';
                         var marker = new google.maps.Marker({
                             position: myLatlng,
                             map: map,
@@ -48,8 +48,8 @@ $(document).ready(init);
                             title: data[index].名稱
                         });
                           var infoWindow = new google.maps.InfoWindow({
-                  content: '功能:' + title + '<br>' /*+ '測 照 地 點:' + location*/
-              });
+        					content: '功能:' + title + '<br>' /*+ '測 照 地 點:' + location*/
+    					});
                     } //End for (var index in data) 
                 }     //End success: function (data) 
             });       //End jQuery Ajax
