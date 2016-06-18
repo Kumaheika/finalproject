@@ -150,16 +150,27 @@ a img {
 }
 
 .footer{
-  height:250px;
+  height:200px;
   background-color:	#3E6184;
   padding-top: 40px; 
+}
+.copyright{
+	margin-left: 100px;
+	width: 350px;
+	height: auto;
+	float: left;
+}
+.info{
+	margin-left: 50px;
+	width: 350px;
+	height: auto;
+	float: left;
 }
 .footer p{
 	text-align:left;
 	font-size: 18px;
 	color:	#BEBEBE;
 	line-height:22px;
-	margin-left: 100px;
 }
 .footer a{
 	color:	#949449;
@@ -173,14 +184,28 @@ a img {
 	font-size: 16px;
 	line-height:24px;
 	display: block;
-	float:left;
-	margin-right: 10px; 
+	float:left; 
+	margin-right: 10px;
 }
-.footer ul{
-	margin-left: 100px;
+.info li{
+	font-family:'PT Sans',sans-serif;
+	font-size: 16px;
+	line-height:24px;
+	display: block;
+	float:left; 
+	margin-right: 25px;
+	width: 40px;
+	height: 40px;
 }
+.info li img{
+	width: 100%;
+	height: 100%;
+	}
 .piclink{
 	clear: both;
+}
+.title{
+	font-size: 28px;
 }
 @media only screen and (max-width: 768px) {
 .wrap{
@@ -222,11 +247,19 @@ a img {
 	height:500px;
   	margin-right: 3%;
 }
-.footer p{
+.copyright{
 	margin-left:10%;
 }
-.footer ul{
-	margin-left:10%;
+.footer{
+	height: 350px;
+}
+.copyright{
+	margin-left: 10%;
+	width: 80%;
+}
+.info{
+	margin-left: 10%;
+	width: 80%;
 }
 }
 @media only screen and (max-width: 480px) {
