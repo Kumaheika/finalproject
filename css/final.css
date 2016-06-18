@@ -176,7 +176,8 @@ a:hover{
   	background-color:  black;
 }
 #div_showMap{
-	background-color: white;
+	width: 600px; 
+	height: 600px;
 }
 .mapitem{
 	width:280px;
