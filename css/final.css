@@ -135,7 +135,7 @@ table {
 .wrap{
   width:1280px;
   height:auto;
-  background-color:#2894FF;
+  background-color:#90C2F3;
   margin-right: auto;
   margin-left: auto;
 }
@@ -153,11 +153,10 @@ a:hover{
 }
 .header{
   height:525px;
-  background-color:#B8D3D3;
+  background-color:white;
 }
 .logo{
 	height:150px;  
-	background-color:white;
 	padding-top: 0px;
 }
 .logo a img{
@@ -166,7 +165,7 @@ a:hover{
 }
 .content{
   height:auto;
-  background-color:	#2894FF;
+
 }
 .map{
 	width:1000px;
@@ -188,7 +187,7 @@ a:hover{
 }
 .footer{
   height:100px;
-  background-color:	#003D79;
+  background-color:	#3E6184;
   padding-top: 50px; 
 }
 .footer p{
