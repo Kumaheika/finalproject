@@ -40,7 +40,7 @@ $(document).ready(init);
                         //建立緯經度座標
                         var myLatlng = new google.maps.LatLng(data[index].緯度Lat, data[index].經度Lng);
                         //加一個Marker到map中
-                        var image = 'camera.png';
+                        var image = '../images/camera.png';
                         var marker = new google.maps.Marker({
                             position: myLatlng,
                             map: map,
