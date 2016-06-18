@@ -135,7 +135,7 @@ table {
 .wrap{
   width:1280px;
   height:auto;
-  background-color:#90C2F3;
+  background-color:#F0FBFF;
   margin-right: auto;
   margin-left: auto;
 }
@@ -159,9 +159,19 @@ a:hover{
 	height:150px;  
 	padding-top: 0px;
 }
-.logo a img{
-	margin-right: auto;
-  	margin-left: auto;
+.logo h1{
+  position: absolute;
+  top:20px;
+  left:480px;
+  width: 300px;
+  height: 69px;
+}
+.logo a{
+  width: 295px;
+  height: 115px;
+  display: block;
+  text-indent:-9999px;
+  background-image: url('../images/logo.png');
 }
 .content{
   height:auto;
