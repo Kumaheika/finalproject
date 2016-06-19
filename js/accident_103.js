@@ -1,12 +1,4 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <title></title>
-    <script type="text/javascript" src="jquery-2.2.3.min.js"></script>
-    
-    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAIDYRRc8L1lFywfqdEoRR7x2WstNGFyBg&callback=initMap"></script>
-    <script type="text/javascript">
-        $(document).ready(init);
+$(document).ready(init);
         //網頁上所有的DOM都載入後
         function init() {
             addMarker();
@@ -69,12 +61,3 @@
                          
             });       //End jQuery Ajax
         }             //End function addMarker() 
-    </script>
-</head>
-<body>
-    <form id="form1" runat="server">
-    <div id="div_showMap" style="width: 800px; height: 600px">
-    </div>
-    </form>
-</body>
-</html>
