@@ -319,13 +319,16 @@ a img {
 #abgne_fade_pic {
 	width: 0%;
 	height: 0%;
+	display:none;
 }
 #abgne_fade_pic .control {
 	top:-9999px; /*******************************************************/
+	display:none;
 }
 #abgne_fade_pic a img{
 	width: 0%;
 	height: 0%;
+	display:none;
 }
 /*以上是輪播*/
 .map{
@@ -373,13 +376,16 @@ margin-top: 25px;
 #abgne_fade_pic {
 	width: 0%;
 	height: 0%;
+	display:none;
 }
 #abgne_fade_pic .control {
 	top:-9999px; /*******************************************************/
+	display:none;
 }
 #abgne_fade_pic a img{
 	width: 0%;
 	height: 0%;
+	display:none;
 }
 /*以上是輪播*/
 .map{
