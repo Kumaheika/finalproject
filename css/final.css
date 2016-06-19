@@ -125,6 +125,7 @@ a img {
 	color: orange;
 }
 /*以上是輪播*/
+
 .content{
   height:auto;
 
@@ -134,6 +135,31 @@ a img {
   	height:800px;
   	margin-right: auto;
   	margin-left: auto;
+}
+.iconinfo{
+	width:700px;
+  	height:60px;
+  	background-color:#DBEEF5;
+  	margin-left: 140px;
+  	float:left;
+}
+.iconinfo ul li{
+	display: block;
+	float: left;
+	margin-right: 10px;
+	height: 30px;
+	width: 180px;
+}
+.iconinfo ul li p{
+	font:14px sans-serif;
+	font-family: "微軟正黑體";
+}
+.iconinfo ul li:hover{
+	color: black;
+}
+.iconinfo ul li img{
+	height: 20px;
+	width: 20px;
 }
 .mapitem{
 	width:280px;
@@ -156,7 +182,6 @@ a img {
   	float:left;
 	margin-top: 20px;
 	font-family:'PT Sans',sans-serif;
-
 }
 .mapitem input{
 	background-color:#00A0C6;
@@ -171,15 +196,13 @@ a img {
 }
 #div_showMap{
 	width: 700px; 
-	height: 800px;
+	height: 740px;
 	float:left;
 }
-
 .footer{
   height:200px;
   background-color:	#3E6184;
-  padding-top: 40px;
-  margin-top: 50px; 
+  padding-top: 40px; 
 }
 .copyright{
 	margin-left: 100px;
@@ -263,11 +286,11 @@ a img {
 }
 .map{
 	width:90%;
-  	height:500px;
+  	height:520px;
 }
 #div_showMap{
 	width: 69%; 
-	height: 500px;
+	height: 407px;
 }
 .mapitem{
 	width:29%;
@@ -290,6 +313,24 @@ a img {
 	font:16px sans-serif;
 	font-family: "微軟正黑體";
 }
+.iconinfo{
+	width:62%;
+  	height:93px;
+  	margin-left:5%;
+}
+.iconinfo ul li{
+	margin-right:3%;
+	height: 30px;
+	width: 45%;
+}
+.iconinfo ul li p{
+	font:12px sans-serif;
+	font-family: "微軟正黑體";
+}
+.iconinfo ul li img{
+	height: 12%;
+	width: 12%;
+}
 .copyright{
 	margin-left:10%;
 }
@@ -305,7 +346,7 @@ a img {
 	width: 80%;
 }
 }
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 580px) {
 .wrap{
   width:100%;
 }
@@ -332,13 +373,17 @@ a img {
 	display:none;
 }
 /*以上是輪播*/
+.content{
+  height:auto;
+
+}
 .map{
 	width:90%;
-  	height:550px;
+  	height:700px;
 }
 .mapitem{
 	width:90%;
-	height:350px;
+	height:400px;
   	float:left;
   	margin-left: 5%;
 }
@@ -346,7 +391,7 @@ a img {
 margin-top:5px;
 }
 .mapitem li{
-margin-top: 25px;
+margin-top: 20px;
 }
 .mapitem input{
 	width: 100%;
@@ -354,6 +399,19 @@ margin-top: 25px;
 	letter-spacing:7px;
 	font:18px sans-serif;
 	font-family: "微軟正黑體";
+}
+.iconinfo{
+width:90%;
+height:90px;
+margin-top: 2%;
+}
+.iconinfo ul li{
+height: 40px;
+width: 30%;
+}
+.iconinfo ul li img{
+height: 15%;
+width: 15%;
 }
 #div_showMap{
 	width: 100%; 
@@ -391,7 +449,7 @@ margin-top: 25px;
 /*以上是輪播*/
 .map{
 	width:90%;
-  	height:450px;
+  	height:670px;
 }
 .mapitem{
 	width:90%;
@@ -402,6 +460,20 @@ margin-top: 25px;
 #div_showMap{
 	width: 100%; 
 	height: 200px;
+}
+.iconinfo{
+width:90%;
+height:95px;
+margin-top: 2%;
+}
+.iconinfo ul li{
+height: 35px;
+width: 49%;
+margin-right: 1%;
+}
+.iconinfo ul li img{
+height: 15%;
+width: 15%;
 }
 
 }
