@@ -178,7 +178,8 @@ a img {
 .footer{
   height:200px;
   background-color:	#3E6184;
-  padding-top: 40px; 
+  padding-top: 40px;
+  margin-top: 50px; 
 }
 .copyright{
 	margin-left: 100px;
