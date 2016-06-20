@@ -183,6 +183,10 @@ a img {
 	margin-top: 20px;
 	font-family:'PT Sans',sans-serif;
 }
+.mapitem input:hover{
+	color:#00A0C6;
+	background-color:#C2E2EA;
+}
 .mapitem input{
 	background-color:#00A0C6;
 	color:white;
