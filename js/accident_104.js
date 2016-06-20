@@ -1,4 +1,3 @@
-
         $(document).ready(init);
         //網頁上所有的DOM都載入後
         function init() {
@@ -44,7 +43,7 @@
                             map: map,
                             icon: image
                         });
-                        var content = info;
+                        var content = '<div class=infowin><p>'+info+'</p></div>';
                         attach(marker,content)
 
                         function attach(marker,content){
