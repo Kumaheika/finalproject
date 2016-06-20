@@ -136,6 +136,10 @@ a img {
   	margin-right: auto;
   	margin-left: auto;
 }
+#div_showMap{
+	width:100px;
+  	height:80px;
+}
 .iconinfo{
 	width:700px;
   	height:60px;
