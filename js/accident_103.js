@@ -43,7 +43,7 @@ $(document).ready(init);
                             map: map,
                             icon: image
                         });
-                        var content = info;
+                        var content = '<div class=infowin><p>'+info+'</p></div>';
                         attach(marker,content)
 
                         function attach(marker,content){
