@@ -1,4 +1,5 @@
-$(document).ready(init);
+
+        $(document).ready(init);
         //網頁上所有的DOM都載入後
         function init() {
             addMarker();
@@ -7,7 +8,7 @@ $(document).ready(init);
         function addMarker() {
             $.ajax(
             {
-                url: 'http://data.kaohsiung.gov.tw/Opendata/DownLoad.aspx?Type=2&CaseNo1=AF&CaseNo2=23&FileType=2&Lang=C&FolderType=O',
+                url: 'http://data.kaohsiung.gov.tw/Opendata/DownLoad.aspx?Type=2&CaseNo1=AF&CaseNo2=21&FileType=2&Lang=C&FolderType=O',
                 type: 'GET',
                 async: false,
                 data: {},
@@ -35,7 +36,7 @@ $(document).ready(init);
                         
                         //加一個Marker到map中
 
-                        var image = 'images/death_104.png';
+                        var image = 'images/death_102.png';
                         var markers = [];
                         var infoWindows = [];
                         var marker = new google.maps.Marker({
@@ -43,7 +44,7 @@ $(document).ready(init);
                             map: map,
                             icon: image
                         });
-                        var content = '<div class=infowin><p>'+info+'</p></div>';
+                        var content = info;
                         attach(marker,content)
 
                         function attach(marker,content){

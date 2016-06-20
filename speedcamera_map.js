@@ -1,4 +1,4 @@
-$(document).ready(init);
+﻿        $(document).ready(init);
         //網頁上所有的DOM都載入後
         function init() {
             addMarker();
@@ -7,7 +7,7 @@ $(document).ready(init);
         function addMarker() {
             $.ajax(
             {
-                url: 'http://data.kaohsiung.gov.tw/Opendata/DownLoad.aspx?Type=2&CaseNo1=AF&CaseNo2=23&FileType=2&Lang=C&FolderType=O',
+                url: 'https://raw.githubusercontent.com/yu19941994/map/gh-pages/camera.json',
                 type: 'GET',
                 async: false,
                 data: {},
@@ -15,10 +15,10 @@ $(document).ready(init);
                 success: function (data) {
                     var first = true;
                     var map;
-                    for (var index=0; index<data.length; index++) {
+                    for (var index in data) {
                         if (first == true) {//第一次執行迴圈
                             /*以哪個緯經度中心來產生地圖*/
-                            var latlng = new google.maps.LatLng(data[index].lat, data[index].lng);
+                            var latlng = new google.maps.LatLng(data[index].緯度Lat, data[index].經度Lng);
                             var myOptions = {
                                 zoom: 14,
                                 center: latlng,
@@ -29,13 +29,13 @@ $(document).ready(init);
                             first = false;
                         } //End if (first == true) 
                         //建立緯經度座標
-                        var myLatlng = new google.maps.LatLng(data[index].lat, data[index].lng);
+                        var myLatlng = new google.maps.LatLng(data[index].緯度Lat, data[index].經度Lng);
                         
-                        var info = data[index].發生路段;
+                        var info = data[index].測照地點;
                         
                         //加一個Marker到map中
 
-                        var image = 'images/death_104.png';
+                        var image = 'images/camera.png';
                         var markers = [];
                         var infoWindows = [];
                         var marker = new google.maps.Marker({
@@ -43,7 +43,7 @@ $(document).ready(init);
                             map: map,
                             icon: image
                         });
-                        var content = '<div class=infowin><p>'+info+'</p></div>';
+                        var content = info;
                         attach(marker,content)
 
                         function attach(marker,content){
@@ -54,10 +54,8 @@ $(document).ready(init);
                                     infowindow.open(marker.get('map'), marker);
                                     });
                             }
-                        
                     } //End for (var index in data) 
-                }     //End success: function (data)
-                
-                         
+                }     //End success: function (data) 
             });       //End jQuery Ajax
         }             //End function addMarker() 
+    

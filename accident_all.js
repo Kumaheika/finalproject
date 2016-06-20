@@ -1,4 +1,5 @@
-$(document).ready(init);
+
+        $(document).ready(init);
         //網頁上所有的DOM都載入後
         function init() {
             addMarker();
@@ -7,12 +8,13 @@ $(document).ready(init);
         function addMarker() {
             $.ajax(
             {
-                url: 'http://data.kaohsiung.gov.tw/Opendata/DownLoad.aspx?Type=2&CaseNo1=AF&CaseNo2=23&FileType=2&Lang=C&FolderType=O',
+                url: 'https://raw.githubusercontent.com/yu19941994/map/gh-pages/accidentya.json',
                 type: 'GET',
                 async: false,
                 data: {},
                 dataType: 'json',
                 success: function (data) {
+                    
                     var first = true;
                     var map;
                     for (var index=0; index<data.length; index++) {
@@ -32,23 +34,38 @@ $(document).ready(init);
                         var myLatlng = new google.maps.LatLng(data[index].lat, data[index].lng);
                         
                         var info = data[index].發生路段;
+                        var year = data[index].排名;
                         
                         //加一個Marker到map中
 
-                        var image = 'images/death_104.png';
+                        var image;
+                        
                         var markers = [];
                         var infoWindows = [];
+                        createMarker(year);
+                        function createMarker(year){
+                            if(year == 102){
+                                image = 'images/death_102.png';
+                            }
+                            else if(year == 103){
+                                image = 'images/death_103.png';
+                            }
+                            else{
+                                image = 'images/death_104.png';
+                            }
+                        }
                         var marker = new google.maps.Marker({
                             position: myLatlng,
                             map: map,
                             icon: image
                         });
-                        var content = '<div class=infowin><p>'+info+'</p></div>';
-                        attach(marker,content)
+                        var content = info;
+                        attach(marker,content);
+                        
 
                         function attach(marker,content){
                             var infowindow = new google.maps.InfoWindow({  
-                                             content: content
+                                    content: content
                                     });
                             google.maps.event.addListener(marker, 'click', function() {
                                     infowindow.open(marker.get('map'), marker);

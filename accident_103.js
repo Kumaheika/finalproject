@@ -1,5 +1,4 @@
-
-        $(document).ready(init);
+$(document).ready(init);
         //網頁上所有的DOM都載入後
         function init() {
             addMarker();
